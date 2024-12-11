@@ -1,0 +1,804 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="UTF-8">
+      <title>Bahula Susu Game center</title>
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <!--enable mobile device-->
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <!--fontawesome css-->
+      <link rel="stylesheet" href="css/font-awesome.min.css">
+      <!--bootstrap css-->
+      <link rel="stylesheet" href="css/bootstrap.min.css">
+      <!--animate css-->
+      <link rel="stylesheet" href="css/animate-wow.css">
+      <link rel="icon" type="image/x-icon" href="bahulalog.jpg.jpg">
+      <!--main css-->
+      <link rel="stylesheet" href="css/style.css">
+      <link rel="stylesheet" href="css/bootstrap-select.min.css">
+      <link rel="stylesheet" href="css/slick.min.css">
+      <!--responsive css-->
+      <link rel="stylesheet" href="css/responsive.css">
+
+      <!--her is react-->
+      <script src="https://unpkg.com/react@18/umd/react.development.js" crossorigin></script>
+  <script src="https://unpkg.com/react-dom@18/umd/react-dom.development.js" crossorigin></script>
+   </head>
+   <body>
+      <header id="header" class="top-head">
+         <!-- Static navbar -->
+         <nav class="navbar navbar-default">
+            <div class="container-fluid">
+               <div class="row">
+                  <div class="col-md-4 col-sm-12 left-rs">
+                     <div class="navbar-header">
+                        <button type="button" id="top-menu" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false"> 
+                        <span class="sr-only">Toggle navigation</span> 
+                        <span class="icon-bar"></span> 
+                        <span class="icon-bar"></span> 
+                        <span class="icon-bar"></span> 
+                        </button>
+                        
+                       <!-- <a href="index.html" class="navbar-brand" style="width: 100px;height: 100px; border-radius: 50%;"><img src="bahulalog.jpg.jpg" alt="hand " /></a>-->
+                       <a href="index.html" class="navbar-brand" style="width: 100px; height: 100px; border-radius: 50%; border: 2px solid #9aacb4;">
+                        <img src="bahulalog.jpg.jpg" alt="hand" style="width: 100%; height: 100%; border-radius: 50%;" />
+                    </a>
+                    
+                    
+                     </div>
+                     <form class="navbar-form navbar-left web-sh">
+                        <div class="form">
+                           <input type="text" class="form-control" placeholder="Search for products or companies">
+                        </div>
+                     </form>
+                  </div>
+                  <div class="col-md-8 col-sm-12">
+                     <div class="right-nav">
+                        <div class="login-sr">
+                           <div class="login-signup">
+                              <ul>
+                                 <li><a href="#">Login</a></li>
+                                 <li><a class="custom-b" href="#">Sign up</a></li>
+                              </ul>
+                           </div>
+                        </div>
+                        <div class="help-r hidden-xs">
+                           <div class="help-box">
+                              <ul>
+                                 <li> <a data-toggle="modal" data-target="#myModal" href="#"> <span>Countries</span> <img src="images/flag.png" alt="" /> </a> </li>
+                                 <li> <a href="#"><img class="h-i" src="images/help-icon.png" alt="" /> Help </a> </li>
+                              </ul>
+                           </div>
+                        </div>
+                        <div class="nav-b hidden-xs">
+                           <div class="nav-box">
+                              <ul>
+
+                                 <!--herer i will put the explaination -->
+                                 <li><a href="howitworks.html">How it works</a></li>
+
+                                 <li><a href="https://malaminjagana.github.io/Malamainjagana-portfolio/">link for Business</a></li>
+                              </ul>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+            <!--/.container-fluid --> 
+         </nav>
+      </header>
+      <!-- Modal -->
+      <div class="modal fade lug" id="myModal" role="dialog">
+         <div class="modal-dialog">
+            <!-- Modal content-->
+            <div class="modal-content">
+               <div class="modal-header">
+                  <button type="button" class="close" data-dismiss="modal">&times;</button>
+                  <h4 class="modal-title">Countries</h4>
+               </div>
+               <div class="modal-body">
+                  <ul>
+                     <li> <a href="#"><img src="https://upload.wikimedia.org/wikipedia/en/b/ba/Flag_of_Germany.svg" alt="Germany Flag" style="width: 20px; height: 20px; border-radius: 50%;" /> Germany</a>
+                     </li>
+                     <li><a href="#"><img src="images/flag-up-1.png" alt="" /> United States</a></li>
+                     <li><a href="#"><img src="images/flag-up-2.png" alt="" /> France </a></li>
+                     
+                    
+                  </ul>
+               </div>
+            </div>
+         </div>
+      </div>
+      <div id="sidebar" class="top-nav">
+         <ul id="sidebar-nav" class="sidebar-nav">
+            <li><a href="#">Help</a></li>
+            <li><a href="howitworks.html">How it works</a></li>
+            <li><a href="#">link for Business</a></li>
+         </ul>
+      </div>
+      <div class="page-content-product">
+         <div class="main-product">
+            <div class="container">
+               <div class="row clearfix">
+                  <div class="find-box">
+                     <h1>Find your next Game,Product or<br>business partner here</h1>
+                     <h4>It has never been easier</h4>
+                     <div class="product-sh">
+                        <div class="col-sm-6">
+                           <div class="form-sh">
+                              <input type="text" placeholder="Search something you love 👉" >
+                           </div>
+                        </div>
+                        <div class="col-sm-3">
+                           <div class="form-sh">
+                              <select class="selectpicker">
+                                 
+                                 <option>Elden Ring</option>
+                                 <option>Dragon Quest Monsters</option>
+                                 <option>Fortnite</option>
+                                 
+                                 <option>EA FC 24</option>
+                                 <option>Final Fantasy VII Rebirth</option>
+                                 <option>Nintendo Switch</option>
+                                 <option>Call of Duty: Modern Warfare III</option>
+                                 <option>Xbox One Games</option>
+                                 <option>Xbox Series X</option>
+                                 <option>Ps5 Games</option>
+                                 <option>Dream League Soccer 2024</option>
+                                 <option>Counter-Strike 2</option>
+                                 <option>EA Sports College Football 25</option>
+                                 <option>Rocket League</option>
+                                 <option>Pubg</option>
+                                 <option>God of war </option>
+                                 <option>Super mario</option>
+                                 
+                                 <option>The Legend of Zelda: Tears of the Kingdom</option>
+                                 <option>Apex Legends</option>
+                                 <option>Pokémon Scarlet and Violet</option>
+                                 <option>Roblox</option>
+                                 
+                                 
+                                 
+                              </select>
+                           </div>
+                        </div>
+                        <div class="col-sm-3">
+                           <div class="form-sh"> <a class="btn" href="#">Search</a> </div>
+                        
+                  </div>
+                     
+               </div>
+               <div class="row clearfix">
+                  <div class="col-lg-3 col-sm-6 col-md-3">
+                     <!-- i will use this game on this "href" with Afflite  link Elden Ring-->
+                     <a href="productpage.html">
+                        <div class="box-img">
+                           <h4>Elden Ring</h4>
+                           <img src="EldenRing.jpg.jpg" alt="" />
+                        </div>
+                     </a>
+                  </div>
+                  <div class="col-lg-3 col-sm-6 col-md-3">
+                     <a href="productpage.html">
+                        <div class="box-img">
+                           <h4>Zelda</h4>
+                           <img src="Zelda.jpg.jpeg" alt="" />
+                        </div>
+                     </a>
+                  </div>
+                  <div class="col-lg-3 col-sm-6 col-md-3">
+                     <a href="productpage.html">
+                        <div class="box-img">
+                           <h4>Pubg</h4>
+                           <img src="Pubg.jpg.jpeg" alt="" />
+                        </div>
+                     </a>
+                  </div>
+                  <div class="col-lg-3 col-sm-6 col-md-3">
+                     <a href="productpage.html">
+                        <div class="box-img">
+                           <h4>EA Sports 25</h4>
+                           <img src="EA Sports College Football 25.jpg.jpeg" alt="" />
+                        </div>
+                     </a>
+                  </div>
+
+
+               
+
+
+                  <div class="col-lg-3 col-sm-6 col-md-3">
+                     <a href="productpage.html">
+                        <div class="box-img">
+                           <h4>Pokémon</h4>
+                           <img src="Pokemond.jpg.png" alt="" />
+                        </div>
+                     </a>
+                  </div>
+                  
+
+                  <div class="col-lg-3 col-sm-6 col-md-3">
+                     <a href="productpage.html">
+                        <div class="box-img">
+                           <h4>Games / Carl Johnson</h4>
+                           <img src="Grandcj.jpg.jpg" alt="" />
+                        </div>
+                     </a>
+                  </div>
+
+
+                  <div class="col-lg-3 col-sm-6 col-md-3">
+                     <a href="productpage.html">
+                        <div class="box-img">
+                           <h4>Super mario </h4>
+                           <img src="super mario.jpg.jpeg" alt="" />
+                        </div>
+                     </a>
+                  </div>
+
+                  <div class="col-lg-3 col-sm-6 col-md-3">
+                     <a href="productpage.html">
+                        <div class="box-img">
+                           <h4>God of war </h4>
+                           <img src="god of war.jpg.jpeg" alt="" />
+                        </div>
+                     </a>
+                  </div>
+
+
+
+
+
+
+
+                  <div class="col-lg-3 col-sm-6 col-md-3">
+                     <a href="productpage.html">
+                        <div class="box-img">
+                           <h4>EA FC 24</h4>
+                           <img src="EA FC 24.jpg.jpeg" alt="" />
+                        </div>
+                     </a>
+                  </div>
+                  <div class="col-lg-3 col-sm-6 col-md-3">
+                     <a href="productpage.html">
+                        <div class="box-img">
+                           <h4>Final Fantasy VII Rebirth</h4>
+                           <img src="Final Fantasy VII Rebirth.jpg.jpeg" alt="" />
+                        </div>
+                     </a>
+                  </div>
+                  <div class="col-lg-3 col-sm-6 col-md-3">
+                     <a href="productpage.html">
+                        <div class="box-img">
+                           <h4>Nintendo Switch</h4>
+                           <img src="Nintendo Switch.jpg.jpeg" alt="" />
+                        </div>
+                     </a>
+                  </div>
+                  <div class="col-lg-3 col-sm-6 col-md-3">
+                     <a href="productpage.html">
+                        <div class="box-img">
+                           <h4>Call of Duty: Modern Warfare III</h4>
+                           <img src="Call of Duty.jpg.jpeg" alt="" />
+                        </div>
+                     </a>
+                  </div>
+                  <div class="col-lg-3 col-sm-6 col-md-3">
+                     <a href="productpage.html">
+                        <div class="box-img">
+                           <h4>Xbox One Games</h4>
+                           <img src="Xbox One Games.jpg.jpeg" alt="" />
+                        </div>
+                     </a>
+                  </div>
+
+
+<div class="col-lg-3 col-sm-6 col-md-3">
+   <a href="productpage.html">
+      <div class="box-img">
+         <h4>Xbox Series X</h4>
+         <img src="Xbox Series X.jpg.jpeg" alt="" />
+      </div>
+   </a>
+</div><div class="col-lg-3 col-sm-6 col-md-3">
+   <a href="productpage.html">
+      <div class="box-img">
+         <h4>new ps5 games</h4>
+         <img src="Ps5 Games.jpg.jpeg" alt="" />
+      </div>
+   </a>
+</div>
+<div class="col-lg-3 col-sm-6 col-md-3">
+   <a href="productpage.html">
+      <div class="box-img">
+         <h4>Dream League Soccer 24</h4>
+         <img src="Dream League Soccer 2024.jpg.jpeg" alt="" />
+      </div>
+   </a>
+</div>
+<div class="col-lg-3 col-sm-6 col-md-3">
+   <a href="productpage.html">
+      <div class="box-img">
+         <h4>Counter-Strike 2</h4>
+         <img src="Counter-Strike.jpg.jpeg" alt="" />
+      </div>
+   </a>
+</div>
+<div class="col-lg-3 col-sm-6 col-md-3">
+   <a href="productpage.html">
+      <div class="box-img">
+         <h4>Rocket League</h4>
+         <img src="Rocket League.jpg.jpeg" alt="" />
+      </div>
+   </a>
+</div>
+
+<div class="col-lg-3 col-sm-6 col-md-3">
+   <a href="productpage.html">
+      <div class="box-img">
+         <h4>Dragon Quest Monsters</h4>
+         <img src="Dragon Quest Monsters.jpg.jpeg" alt="" />
+      </div>
+   </a>
+</div>
+
+<div class="col-lg-3 col-sm-6 col-md-3">
+   <a href="productpage.html">
+      <div class="box-img">
+         <h4>Apex Legends</h4>
+         <img src="Apex Legends.jpg.jpeg" alt="" />
+      </div>
+   </a>
+</div>
+
+<div class="col-lg-3 col-sm-6 col-md-3">
+   <a href="productpage.html">
+      <div class="box-img">
+         <h4>Fortnite</h4>
+         <img src="Fortnite.jpg.jpeg" alt="" />
+      </div>
+   </a>
+</div>
+
+
+              
+                  <div class="categories_link">
+                     
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+      <div class="cat-main-box">
+         
+         <div class="container">
+            <div class="row panel-row">
+               <div class="col-md-4 col-sm-6 wow fadeIn" data-wow-delay="0.0s">
+                  <div class="panel panel-default">
+                     <div class="panel-body">
+                        <img src="images/xpann-icon.jpg" class="icon-small" alt="">
+                        <h4>Immerse Yourself in the World of Gaming</h4>
+                        <p>Discover endless adventures and excitement with our curated collection of games. Whether you're a casual player or a seasoned pro, there's something here for everyone. Dive in and enjoy!
+                        </p>
+                     </div>
+                  </div>
+               </div>
+               <div class="col-md-4 col-sm-6 wow fadeIn" data-wow-delay="0.2s">
+                  <div class="panel panel-default">
+                     <div class="panel-body">
+                        <img src="images/create-icon.jpg" class="icon-small" alt="">
+                        <h4>Unleash Your Creativity Through Gaming</h4>
+                        <p>Explore games that inspire creativity and innovation. From building worlds to solving intricate puzzles, let your imagination take the lead. Play, create, and thrive!
+                        </p>
+                     </div>
+                  </div>
+               </div>
+               <div class="col-md-4 col-sm-6 wow fadeIn hidden-sm" data-wow-delay="0.4s">
+                  <div class="panel panel-default">
+                     <div class="panel-body">
+                        <img src="images/get-icon.jpg" class="icon-small" alt="">
+                        <h4>Get Inspired, One Game at a Time</h4>
+                        <p>Dive into games that spark ideas, fuel imagination, and ignite your passion. Experience the power of inspiration through every level and challenge!
+                        </p>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+      
+      <div class="products_exciting_box">
+         <div class="container" style="margin-left: 50px;">
+            <div class="row">
+               <div class="col-md-6 col-sm-6 wow fadeIn" data-wow-delay="0.2s">
+                  <div class="exciting_box f_pd">
+                     <img src="images/exciting_img-01.jpg" class="icon-small" alt="" />
+                     <h4>Discover <strong>Unique </strong> and Exciting Products Made Just for <strong>You</strong>
+                     </h4>
+                     <p>Uncover a world of exotic and personalized items designed to match your style and needs. Your next great find awaits—start exploring now!</p>
+
+                  </div>
+               </div>
+               <div class="col-md-6 col-sm-6 wow fadeIn" data-wow-delay="0.4s">
+                  <div class="exciting_box l_pd">
+                     <img src="images/exciting_img-02.jpg" class="icon-small" alt="" />
+                     <h4><strong>Showcase Your Games on Chamb</strong> and Expand Your Network</h4>
+                     <p>List your gaming products on Bahula to reach a wider audience and build valuable connections in the gaming industry. Grow your presence and success with us!</p>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+      <div class="start-free-box">
+         <div class="container">
+            <div class="row">
+               <div class="container">
+                  <div class="main-start-box">
+                     <div class="free-box-a clearfix">
+                        <div class="col-md-6 col-sm-6">
+                           <div class="left-a-f">
+                              <h3>Bahula Susu E-Commer websete for Games.</h3>
+                              <div class="loader"></div>
+                           </div>
+                        </div>
+                        <div class="col-md-6 col-sm-6">
+                           <div class="right-a-f">
+                             
+                              <p>In the years ahead, <strong>Bahula</strong>  is set to revolutionize online business, redefining how the web operates—and Chamb is the ultimate game-changer driving this transformation
+                              </p>
+                              <div class="loader1"></div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+            <div class="row">
+               <div class="main-start-box">
+                  <div class="bg_img_left"><img src="images/bg_img1.png" alt="#" /></div>
+                  <div class="container">
+                     <div class="buyer-box clearfix">
+                        <div class="col-md-6 col-sm-6 wow fadeIn" data-wow-delay="0.2s">
+                           <div class="left-buyer">
+                              <img class="img-responsive" src="popoler.jpg.jpeg" alt="#" />
+                           </div>
+                        </div>
+                        <div class="col-md-6 col-sm-6 wow fadeIn" data-wow-delay="0.4s">
+                           <div class="right-buyer">
+                              <h4>buyer</h4>
+                              <h2><br>
+                                 <span>EA Sports College Football 25 </span>
+                              </h2>
+                              <p>delivers an authentic college football experience with stunning graphics and realistic gameplay. Create and manage your college team, compete in dynasty mode, and challenge others online. Immerse yourself in the excitement with fight songs, mascots, and dynamic crowds—available now on Bahula.
+                              </p>
+                              <a href="#"> buyer now</a>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+            <div class="row">
+               <div class="bg_img_right"><img src="images/bg_img1.png" alt="#" /></div>
+               <div class="main-start-box">
+                  <div class="container">
+                     <div class="supplier clearfix">
+                        <div class="col-md-5 col-sm-6">
+                           <div class="left-supplier">
+                              <h4>Online</h4>
+                              <h2>Grow your Gaming <br><span></span>Connection</h2>
+                              <p>Play the game online with your friends and join the action! Experience the excitement of EA Sports College Football 25, alongside top titles like Call of Duty: Modern Warfare 3, Helldivers 2, and Dragon’s Dogma 2. Available now on Bahula—let’s game together
+                              </p>
+                              .
+                              <a href="#">Get in touch</a>
+                           </div>
+                        </div>
+                        <div class="col-md-7 col-sm-6">
+                           <div class="right-supplier">
+                              <img class="img-responsive" src="images/supplier-pc-img.png" alt="#" />
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+      <div class="products">
+         <div class="main-products">
+            <h2>Bahula House Products</h2>
+            <div class="product-slidr">
+               <div class="slider">
+                  <div>
+                     <div class="prod-box">
+                        <div class="prod-i">
+                           <img src="images/tr1.png" alt="#" />
+                        </div>
+                        <div class="prod-dit clearfix">
+                           <div class="dit-t clearfix">
+                              <div class="left-ti">
+                                 <h4>Table with Lights</h4>
+                                 <p>By <span>Beko</span> under <span>Lights</span></p>
+                              </div>
+                              <a href="#">$1220</a>
+                           </div>
+                           <div class="dit-btn clearfix">
+                              <a class="wis" href="#"><i class="fa fa-star" aria-hidden="true"></i> Save to wishlist </a>
+                              <a class="thi" href="#"><i class="fa fa-thumbs-up" aria-hidden="true"></i> Like this</a>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+                  <div>
+                     <div class="prod-box">
+                        <div class="prod-i">
+                           <img src="images/tr2.png" alt="#" />
+                        </div>
+                        <div class="prod-dit clearfix">
+                           <div class="dit-t clearfix">
+                              <div class="left-ti">
+                                 <h4>Treehouse Bed</h4>
+                                 <p>By <span>Beko</span> under <span>Lights</span></p>
+                              </div>
+                              <a href="#">$1220</a>
+                           </div>
+                           <div class="dit-btn clearfix">
+                              <a class="wis" href="#"><i class="fa fa-star" aria-hidden="true"></i> Save to wishlist </a>
+                              <a class="thi" href="#"><i class="fa fa-thumbs-up" aria-hidden="true"></i> Like this</a>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+                  <div>
+                     <div class="prod-box">
+                        <div class="prod-i">
+                           <img src="images/tr3.png" alt="#" />
+                        </div>
+                        <div class="prod-dit clearfix">
+                           <div class="dit-t clearfix">
+                              <div class="left-ti">
+                                 <h4>Wood Sofaplatform</h4>
+                                 <p>By <span>Beko</span> under <span>Lights</span></p>
+                              </div>
+                              <a href="#">$1220</a>
+                           </div>
+                           <div class="dit-btn clearfix">
+                              <a class="wis" href="#"><i class="fa fa-star" aria-hidden="true"></i> Save to wishlist </a>
+                              <a class="thi" href="#"><i class="fa fa-thumbs-up" aria-hidden="true"></i> Like this</a>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+                  <div>
+                     <div class="prod-box">
+                        <div class="prod-i">
+                           <img src="images/tr4.png" alt="#" />
+                        </div>
+                        <div class="prod-dit clearfix">
+                           <div class="dit-t clearfix">
+                              <div class="left-ti">
+                                 <h4>Wall Sticker</h4>
+                                 <p>By <span>Beko</span> under <span>Lights</span></p>
+                              </div>
+                              <a href="#">$1220</a>
+                           </div>
+                           <div class="dit-btn clearfix">
+                              <a class="wis" href="#"><i class="fa fa-star" aria-hidden="true"></i> Save to wishlist </a>
+                              <a class="thi" href="#"><i class="fa fa-thumbs-up" aria-hidden="true"></i> Like this</a>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+                  <div>
+                     <div class="prod-box">
+                        <div class="prod-i">
+                           <img src="images/tr1.png" alt="#" />
+                        </div>
+                        <div class="prod-dit clearfix">
+                           <div class="dit-t clearfix">
+                              <div class="left-ti">
+                                 <h4>Treehouse Bed</h4>
+                                 <p>By <span>Beko</span> under <span>Lights</span></p>
+                              </div>
+                              <a href="#">$1220</a>
+                           </div>
+                           <div class="dit-btn clearfix">
+                              <a class="wis" href="#"><i class="fa fa-star" aria-hidden="true"></i> Save to wishlist </a>
+                              <a class="thi" href="#"><i class="fa fa-thumbs-up" aria-hidden="true"></i> Like this</a>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+                  <div>
+                     <div class="prod-box">
+                        <div class="prod-i">
+                           <img src="images/tr2.png" alt="#" />
+                        </div>
+                        <div class="prod-dit clearfix">
+                           <div class="dit-t clearfix">
+                              <div class="left-ti">
+                                 <h4>Treehouse Bed</h4>
+                                 <p>By <span>Beko</span> under <span>Lights</span></p>
+                              </div>
+                              <a href="#">$1220</a>
+                           </div>
+                           <div class="dit-btn clearfix">
+                              <a class="wis" href="#"><i class="fa fa-star" aria-hidden="true"></i> Save to wishlist </a>
+                              <a class="thi" href="#"><i class="fa fa-thumbs-up" aria-hidden="true"></i> Like this</a>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+                  <div>
+                     <div class="prod-box">
+                        <div class="prod-i">
+                           <img src="images/tr3.png" alt="#" />
+                        </div>
+                        <div class="prod-dit clearfix">
+                           <div class="dit-t clearfix">
+                              <div class="left-ti">
+                                 <h4>Treehouse Bed</h4>
+                                 <p>By <span>Beko</span> under <span>Lights</span></p>
+                              </div>
+                              <a href="#">$1220</a>
+                           </div>
+                           <div class="dit-btn clearfix">
+                              <a class="wis" href="#"><i class="fa fa-star" aria-hidden="true"></i> Save to wishlist </a>
+                              <a class="thi" href="#"><i class="fa fa-thumbs-up" aria-hidden="true"></i> Like this</a>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+      <footer>
+         <div class="main-footer">
+            <div class="container">
+               <div class="row">
+                  <div class="footer-top clearfix">
+                     <div class="col-md-2 col-sm-6">
+                        
+                     </div>
+                     <div class="col-md-6 col-sm-6">
+                        <div class="form-box">
+                           <input type="text" placeholder="Enter your e-mail" />
+                           <button>Continue</button>
+                        </div>
+                     </div>
+                     <div class="col-md-4 col-sm-12">
+                        <div class="help-box-f">
+                           <h4>Question? Call us +49 155 66076703 for help</h4>
+                           
+                        </div>
+                     </div>
+                  </div>
+                  <div class="footer-link-box clearfix">
+                     <div class="col-md-6 col-sm-6">
+                        <div class="left-f-box">
+                           <div class="col-sm-4">
+                              <h2>SELL ON Bahula</h2>
+                              <ul>
+                                 <li><a href="#">Create account</a></li>
+                                 <li><a href="howitworks.html">How it works suppliers</a></li>
+                                 <li><a href="pricing.html">Pricing</a></li>
+                                 <li><a href="#">FAQ for Suppliers</a></li>
+                              </ul>
+                           </div>
+                           <div class="col-sm-4">
+                              <h2>BUY ON Bahula</h2>
+                              <ul>
+                                 <li><a href="#">Create account</a></li>
+                                 <li><a href="#">How it works buyers</a></li>
+                                 <li><a href="#">Categories</a></li>
+                                 <li><a href="#">FAQ for buyers</a></li>
+                              </ul>
+                           </div>
+                           <div class="col-sm-4">
+                              <h2>COMPANY</h2>
+                              <ul>
+                                 <li><a href="https://malaminjagana.github.io/Malamainjagana-portfolio/">About Bahula</a></li>
+                                 <li><a href="#">Contact us</a></li>
+                                 <li><a href="#">Press</a></li>
+                                 <li><a href="#">Careers</a></li>
+                                 <li><a href="#">Terms of use</a></li>
+                              </ul>
+                           </div>
+                        </div>
+                     </div>
+                     <div class="col-md-6 col-sm-6">
+                        <div class="right-f-box">
+                           <h2>INDUSTRIES</h2>
+                           <ul class="col-sm-4">
+                              <li><a href="#">Textiles</a></li>
+                              <li><a href="#">Furniture</a></li>
+                              <li><a href="#">Leather</a></li>
+                              <li><a href="#">Agriculture</a></li>
+                              <li><a href="#">Food & drinks</a></li>
+                           </ul>
+                           <ul class="col-sm-4">
+                              <li><a href="#">Office</a></li>
+                              <li><a href="#">Decoratives</a></li>
+                              <li><a href="#">Electronics</a></li>
+                              <li><a href="#">Machines</a></li>
+                              <li><a href="#">Building</a></li>
+                           </ul>
+                           <ul class="col-sm-4">
+                              <li><a href="#">Cosmetics</a></li>
+                              <li><a href="#">Health</a></li>
+                              <li><a href="#">Jewelry</a></li>
+                              <li><a href="#">See all here</a></li>
+                           </ul>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+         <div class="copyright">
+            <div class="container">
+               <div class="row">
+                  <div class="col-md-8">
+                     <p><img width="90" src="bahulalog.jpg.jpg" alt="#" style="margin-top: -5px;" /> Div M.jagana © 2024</p>
+                  </div>
+                  <div class="col-md-4">
+                     <ul class="list-inline socials">
+                        <li>
+                           <a href="">
+                           <i class="fa fa-facebook" aria-hidden="true"></i>
+                           </a>
+                        </li>
+                        <li>
+                           <a href="">
+                           <i class="fa fa-twitter" aria-hidden="true"></i>
+                           </a>
+                        </li>
+                        <li>
+                           <a href="">
+                           <i class="fa fa-instagram" aria-hidden="true"></i>
+                           </a>
+                        </li>
+                        <li>
+                           <a href="https://www.linkedin.com/in/malamin-jagana/">
+                           <i class="fa fa-linkedin" aria-hidden="true"></i>
+                           </a>
+                        </li>
+                     </ul>
+                     <ul class="right-flag">
+                        <li> <a href="#"><img src="https://upload.wikimedia.org/wikipedia/en/b/ba/Flag_of_Germany.svg" alt="Germany Flag" style="width: 30px; height: 30px; border-radius: 50%;" /> Germany</a>
+                        
+                     </ul>
+                  </div>
+                  <!--react root-->
+                  <div id="root"></div>
+
+                   <div id="react-section"></div>
+
+               </div>
+            </div>
+         </div>
+      </footer>
+      <!--main js--> 
+      <script src="js/jquery-1.12.4.min.js"></script> 
+      <!--bootstrap js--> 
+      <script src="js/bootstrap.min.js"></script> 
+      <script src="js/bootstrap-select.min.js"></script>
+      <script src="js/slick.min.js"></script> 
+      <script src="js/wow.min.js"></script>
+      <!--custom js--> 
+      <script src="js/custom.js"></script>
+<!--react laibery-->
+<!-- React and ReactDOM Development (for development/testing) -->
+<script src="https://unpkg.com/react@18/umd/react.development.js" crossorigin></script>
+<script src="https://unpkg.com/react-dom@18/umd/react-dom.development.js" crossorigin></script>
+<!-- React and ReactDOM Production (for live environments) -->
+<script src="https://unpkg.com/react@18/umd/react.production.min.js" crossorigin></script>
+<script src="https://unpkg.com/react-dom@18/umd/react-dom.production.min.js" crossorigin></script>
+<script src="app.js"></script>
+
+
+
+   </body>
+</html>
